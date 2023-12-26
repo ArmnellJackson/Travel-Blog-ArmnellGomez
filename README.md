@@ -1,3 +1,13 @@
+<!-- Paginas de inspiracion; -->
+-[https://saltaconmigo.com/blog/]
+-[https://imanesdeviaje.com/]
+-[https://www.mochileandoporelmundo.com/]
+-[https://www.conmochila.com/]
+-[https://www.viviendodeviaje.com/]
+-[https://www.viajeroscallejeros.com/]
+<!--END Paginas de inspiracion; -->
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
