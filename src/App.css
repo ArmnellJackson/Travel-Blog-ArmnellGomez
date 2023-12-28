@@ -1,3 +1,60 @@
+:root {
+  --tono-1: #E5E5CB;
+  --tono-2: #D5CEA3;
+  --tono-3: #3C2A21;
+  --tono-4: #1A120B;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tono-2);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7.5px 58px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Fjalla+One&display=swap');
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+*/
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 200;
 }

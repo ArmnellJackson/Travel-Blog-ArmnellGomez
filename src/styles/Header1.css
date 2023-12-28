@@ -1,0 +1,93 @@
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+*/
+
+.nav {
+	font-family: 'Fjalla One', sans-serif;
+	background: var(--tono-4);
+	width: 100%;
+	height: 80px;
+	color: var(--tono-1);
+}
+
+.nav-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8px;
+}
+
+.nav-logo {
+	margin-bottom: 0;
+	color: var(--tono-1);
+	font-size: 3rem;
+}
+
+.nav-label, .nav-input {
+	display: none;
+}
+
+.nav-menu {
+	display: flex;
+	/* grid-auto-flow: column; */
+	gap: 3rem;
+}
+
+.nav-item {
+	color: var(--tono-1);
+	text-decoration: none;
+	margin-top: .3rem;
+	--clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+	cursor: default;
+}
+
+.nav-item::after {
+	content: '';
+	display: block;
+	background: var(--tono-1);
+	width: 96%;
+	margin-top: .1rem;
+	height: .3rem;
+	clip-path: var(--clippy);
+	transition: clip-path .3s;
+}
+
+.nav-item:hover {
+	--clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 700px) {
+	.nav-label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav-menu {
+		position: fixed;
+		top: 80px;
+		bottom: 0;
+		background: var(--tono-4);
+		width: 100%;
+		left: 0;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-end;
+		padding-right: 8px;
+		gap: 8px;
+		clip-path: circle(0.0% at 100% 0);
+		transition: clip-path .3s ease-in-out;
+	}
+
+	.nav-item {
+		margin-top: 0;
+	}
+}
+
+.nav-input:checked + .nav-menu {
+	clip-path: circle(100.0% at 100% 0);
+}
