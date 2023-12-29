@@ -1,0 +1,69 @@
+.main-menu-circular {
+    justify-content: flex-start;
+}
+
+.container-menu-circular {
+    text-align: center;
+    position: relative;
+    width: 146px;
+    height: 146px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -20px;
+}
+
+.container-menu-circular .toggle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--tono-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 3rem;
+    transition: transform 1.25s;
+    color: var(--tono-4);
+}
+
+.container-menu-circular li {
+    position: absolute;
+    list-style: none;
+    left: 0;
+    transform-origin: 72px;
+    transition: .5s;
+    transition-delay: calc(.1s * var(--i));
+    transform: rotate(0deg) translateX(56px);
+}
+
+.container-menu-circular li ion-icon {
+    color: var(--tono-4);
+}
+
+.container-menu-circular li ion-icon:hover {
+    color: var(--tono-3);
+}
+
+.container-menu-circular.active li {
+    transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.container-menu-circular li a {
+    background: var(--tono-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    transition: 1.6s;
+}
+
+
+.container-menu-circular.active .toggle {
+    transform: rotate(315deg);
+}

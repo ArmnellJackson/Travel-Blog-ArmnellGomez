@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Header1.css';
-import MenuIcon from '../assets/menu.svg';
+import IconMenuHamburguesa from '../assets/IconMenuHamburguesa.svg';
 
 function Header1() {
 	return (
@@ -8,8 +8,8 @@ function Header1() {
 			<nav className='nav'>
 				<div className='nav-container'>
 					<h1 className='nav-logo'>AG</h1>
-					<label for='menu' className='nav-label'>
-						<img src={MenuIcon} alt='icon-menu-nav' className='nav-img' />
+					<label htmlFor='menu' className='nav-label'>
+						<img src={IconMenuHamburguesa} alt='icon-menu-nav' className='nav-img' />
 					</label>
 					<input type='checkbox' id='menu' className='nav-input' />
 
