@@ -7,7 +7,7 @@ function Header1() {
 		<>
 			<nav className='nav'>
 				<div className='nav-container'>
-					<h1 className='nav-logo'>AG</h1>
+					<h1 className='nav-logo'>M&L</h1>
 					<label htmlFor='menu' className='nav-label'>
 						<img src={IconMenuHamburguesa} alt='icon-menu-nav' className='nav-img' />
 					</label>
